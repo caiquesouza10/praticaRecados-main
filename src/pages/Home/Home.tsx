@@ -66,7 +66,7 @@ function Home() {
       <Grid container spacing={2}>
         {listaDeRecados.map((item) => (
           <Grid item xs={3}>
-            <CardComp titulo={item.titulo} texto={item.texto} />
+            <CardComp key={item.titulo} titulo={item.titulo} texto={item.texto} />
           </Grid>
         ))}
       </Grid>
