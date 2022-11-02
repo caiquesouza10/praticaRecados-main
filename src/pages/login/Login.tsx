@@ -32,21 +32,20 @@ export default function Login() {
   const [email, setEmail] = useState('') // retorna uma lista de valores [0, 1]
   const [senha, setSenha] = useState('')
   const [usuarios, setUsuarios] = useState<User[]>(JSON.parse(localStorage.getItem('usuarios') ?? '[]'));
-  const [usuarioLogado, setUsuarioLogado] = useState<User | null>(null);
 
 
-  useEffect(() => {
-    let usuario = localStorage.getItem('usuarioLogado')
 
-    usuario ? setUsuarioLogado(JSON.parse(usuario)) : setUsuarioLogado(null)
-    
-  }, [])
-
-  useEffect(() => {
-    if(usuarioLogado){
-      navigate('/home')
-    }
-  }, [navigate, usuarioLogado])
+                    //VERIFICA SE TEM USUARIO LOGADO
+  // const [usuarioLogado, setUsuarioLogado] = useState<User | null>(null);
+  // useEffect(() => {
+  //   let usuario = localStorage.getItem('usuarioLogado')
+  //   usuario ? setUsuarioLogado(JSON.parse(usuario)) : setUsuarioLogado(null)
+  // }, [])
+  // useEffect(() => {
+  //   if(usuarioLogado){
+  //     navigate('/home')
+  //   }
+  // }, [navigate, usuarioLogado])
 
 
 
