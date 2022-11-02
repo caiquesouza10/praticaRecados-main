@@ -61,7 +61,7 @@ function Home() {
     <Box sx={{ flexGrow: 1 }}>
       <Link to="/">Home</Link>
       <Typography gutterBottom variant="h2">
-        Bem vindo a página, teste
+        Bem vindo a página, NOME
       </Typography>
       <Grid container spacing={2}>
         {listaDeRecados.map((item) => (
